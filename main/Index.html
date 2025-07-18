@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css"><!-- Link to external CSS file -->
+        <title>Printer SellerNP</title>
+        <style type="text/css">
+            .ho:hover/* Hover effect for navigation links */
+            {
+                background-color: white;
+                color: black;
+            }
+
+            .heroimg
+            {
+                display: block;
+                width: 100%;
+            }
+
+            .overlay-text /* Overlay text styles */
+            {
+                position: absolute;
+                top: 250px; 
+                left: 27%; 
+                transform: translate(-50%, -50%); 
+                background-color:transparent; 
+                color: black;
+                padding: 10px 20px; 
+                font-size: 20px; 
+            }
+
+            .overlay-text1 
+            {
+                position: absolute;
+                top: 1144px; 
+                left: 80%; 
+                transform: translate(-50%, -50%); 
+                background-color:transparent; 
+                color: black;
+                padding: 20px 20px; 
+                font-size: 20px; 
+            }
+
+            .overlay-text2 
+            {
+                position: absolute;
+                top: 820px; 
+                left: 19%; 
+                transform: translate(-50%, -50%); 
+                background-color:transparent; 
+                color: black;
+                padding: 20px 40px; 
+                font-size: 20px; 
+            }
+
+            .canon
+            {
+                display: flex;
+                gap: 4px;
+            }
+
+            .hero1
+            {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .pst
+            {
+                color: black;
+            }
+
+            .rest
+            {
+                max-width: 1100px;
+                margin: auto;
+            }
+
+            .slider /* Slider styles */
+            {
+                width: 1000px;
+                height: 500px;
+                margin: 20px auto;
+      /*
+      box-sizing property allows us to include the padding and border in an element's total width and height.
+      */
+                box-sizing: border-box;
+      /*The overflow is clipped, and the rest of the content will be invisible*/
+                overflow: hidden;
+                box-shadow: 5px 5px 10px;
+            }
+
+            .img
+            {
+
+                width: 200px;
+                height:200px;
+            }
+
+        </style>
+    </head>
+<body>
+    <section class="nav">
+        <nav>
+            <div class="navbar2">
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printer SellerNP</h1>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Pages/Products.html">Products</a></li>
+                    <li><a href="Pages/AboutUs.html">About Us</a></li>
+                    <li><a href="Pages/ContactUs.html">Contact Us</a></li>
+                    <li><a href="Pages/Blog.html">Blog</a></li>
+                    <li><a href="Pages/Research.html">Research</a></li>
+                </ul>
+                <div class="lolo"><!-- Search bar -->
+                    <p align="right"><label></label><input type="text" name="product" placeholder="Search Products"><button type="submit">Search</button></p>
+                </div>
+            </div>
+        </nav>
+   </section>
+
+   <section class="hero"> 
+        <div>
+            <img class="heroimg" src="Images/heroofpage.png" width="1400px" height="600px" >
+            <div class="overlay-text">
+                <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;font-size: 35px;color: aliceblue;"> Welcome to the world of printers </h1>
+            </div>
+        </div>
+    <br>
+    <br>
+   </section>
+
+   <div class="pst">
+        <p style="text-align: center;font-size: 30px;font-family: Arial, Helvetica, sans-serif;"><b>Products we sell </b></p>
+   </div>
+  
+   <br>
+   <section class="hero1">
+        <div class="canon">
+            <div>
+                <img src="Images/realespon.jpeg" height="500px" width="600px">
+                <div class="overlay-text2">
+                    <h1 style="font-family: 'Times New Roman', Times, serif; text-align: left;color:white;font-size: 25px;"> Brother <br> <br>
+                    Wireless Laser printing <br>duplex printer <br>auto feeder </h1>
+                </div>
+            </div>
+            <div>
+                <img src="Images/brother.jpeg" height="500px" width="600px">
+                <div class="overlay-text1">
+                    <h1 style="font-family: 'Times New Roman', Times, serif; text-align:left;color: black;;font-size: 25px;"> Espon  <br>Wireless Inkjet Printer <br> All in one printer</h1>
+                 </div>
+            </div>
+        </div>
+   </section>
+
+   <br>
+   <br>
+   <br>
+   <section class="rest">
+        <div>
+            <p style="text-align: center;font-size:30px;"><b>Printer sellerNP is a platform market leader</b></p><br>
+            <p style="text-align: center;font-size: 30px;">For nearly 50 years our philosophy of efficient and precise delivery has enriched the shopping experience </p>
+            <br>
+            <p style="text-align: center;font-size: 30px;">Here is a quick outlook of our journey</p>
+        </div>
+        <div class="slider">
+            <div id="img">
+                <img src="Images/Uni.png">
+            </div>
+        </div>
+    
+        <script>
+            // Array of images for slider
+            var images = ['Images/sum1.png','Images/locations.jpeg','Images/locate.png'];
+    
+            var x = 0;
+            var imgs = document.getElementById('img');
+            //The setInterval() calls a function at theintervals (in milliseconds). 
+            setInterval(slider, 3000);
+    
+            function slider() {
+            // Looping through images
+            if (x < images.length) 
+            {
+                x = x + 1;
+            } 
+    
+            else 
+            {
+                x = 1;
+            }
+            // Updating image source
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }
+        </script>
+    </section>
+    <section >
+        <footer>
+            <div class="lol2">
+                <div style="text-align: left; font-size:14;padding-left: 30px;">
+                    <br>
+                    <a href="Index.html">Home</a>
+                    <br>
+                    <a href="Pages/Products.html">Products</a>
+                    <br>
+                    <a href="Pages/AboutUs.html">About Us</a>
+                    <br>
+                    <a href="Pages/ContactUs.html">Contact Us</a>
+                    <br>
+                    <a href="Pages/Blog.html">Blog</a>
+                    <br>
+                    <a href="Pages/Research.html">Research</a>
+                </div>
+                <div class="f1">
+                    <p>Address :Putalisadak, Kathmandu 44600 </p>
+                    <p>Phone number : (+977) 9765222828</p>
+                </div>
+            </div>
+            <p>&copy;2023 My E-Commerce Store. All rights reserved.</p>
+            <div class="line">
+          
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html> 

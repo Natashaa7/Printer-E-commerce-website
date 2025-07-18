@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contact Us-Printer Seller</title>
+    <style>
+        body
+        {
+            background-image: url('../Images/map.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form{
+            overflow: hidden;
+            padding-left: 500px;
+            padding-top: 100px;
+            color: white;
+        }
+        .navbar2{
+            text-decoration: dotted;
+        }
+        .flexform{
+            display: flex;
+            gap: 15px;
+        }
+        .button{
+            padding-left: 200px;
+            padding-top: 80px;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="nav">
+        <nav>
+            <div class="navbar2">
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printer SellerNP</h1>
+                <ul>
+                    <li><a href="../Index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                </ul>
+                <div class="lolo">
+                    <p align="right"><label></label><input type="text" name="product" placeholder="Search Products"><button type="submit">Search</button></p>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <br>
+    <br>
+    <br>
+    <!-- Section for contact details -->
+    <p style="font-size: 40px;color: white;text-align: center; margin-top: 20px; border-bottom: 1px solid white;">GET IN TOUCH</p><br>
+    <p style="color: white;text-align: center;">Phone : (+977) 976522828</p><br>
+    <p style="color: white;text-align: center;">Email : <b style="color: red;">printersellerNP@gmail.com</b></p><br>
+    <p style="color: white;text-align: center;">Address : 15 Chandragiri Ram Mandir, Dhungeadda, Kathmandu, Nepal</p><br>
+    <section class="form">
+        <div class="flexform">
+            <!-- Form inputs -->
+            <div>
+                <form name="messageForm" onsubmit="validateForm()">
+                    <label>Email:</label> <br>
+                    <textarea rows="2" cols="25" name="email" placeholder="Enter your email"></textarea>
+                    <br>
+                    <br>
+                    <label>Name:</label><br>
+                    <textarea rows="2" cols="25" name="fullname" placeholder="Enter your name"></textarea>
+                    <br>
+                    <br>
+                    <label>Phone: </label> <br>
+                    <textarea rows="2" cols="25" name="phone" placeholder="Enter your number"></textarea>
+                </div>
+                <br>
+                <br>
+                <div> 
+                    <label style="font-family: Arial, Helvetica, sans-serif;">Message:</label><br>
+                    <textarea rows="11" cols="25" name="message" placeholder="Enter your message"></textarea>
+        <br>    </div>
+    
+            </div>
+            <!-- Submit button -->
+            <div class="button">
+                <input type="submit" value="Submit Button" style="text-align: center;">
+            </div>
+     
+        </form>
+         <!-- JavaScript for form validation -->
+        <script type="text/javascript">
+            function validateForm()
+            {
+                var Email = document.forms["messageForm"]["email"].value;
+                var FullName = document.forms["messageForm"]["fullname"].value;
+                var messageDetails = document.forms["messageForm"]["message"].value;
+                var number = document.forms["messageForm"]["phone"].value
+ 
+                //alert(messageDetails);
+                if (Email == "" || FullName == "" || messageDetails == "" || Number == "") 
+                {
+                    alert("Empty fields are present!!! Please enter the values...");
+                }
+                else
+                {
+                    alert("Thank you for your feedback!!!")
+                }
+            }
+        </script>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section class="lol2">
+        <footer>
+            <div class="lol2">
+                <div style="text-align: left; font-size:14;padding-left: 30px;">
+                    <br>
+                    <a href="../Index.html">Home</a>
+                    <br>
+                    <a href="Products">Products</a>
+                    <br>
+                    <a href="AboutUs.html">About Us</a>
+                    <br>
+                    <a href="ContactUs.html">Contact Us</a>
+                    <br>
+                    <a href="Blog.html">Blog</a>
+                    <br>
+                    <a href="Research.html">Research</a>
+                </div>
+                <div class="f1">
+                    <p>Address :Putalisadak, Kathmandu 44600 </p>
+                    <p>Phone number : (+977) 9765222828</p>
+                </div>
+            </div>
+            <p>&copy;2023 My E-Commerce Store. All rights reserved.</p>
+            <div class="line">
+      
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>
